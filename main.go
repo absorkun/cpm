@@ -15,7 +15,7 @@ import (
 var db *sql.DB
 
 func initDB() *sql.DB {
-	dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s?parseTime=true&loc=Asia%%2FJakarta",
+	dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s",
 		os.Getenv("USERNAME"),
 		os.Getenv("PASSWORD"),
 		os.Getenv("HOSTNAME"),
